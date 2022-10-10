@@ -1,0 +1,23 @@
+Source: libcpan-distnameinfo-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Niko Tyni <ntyni@iki.fi>,
+           gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 11)
+Build-Depends-Indep: perl
+Standards-Version: 4.1.4
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libcpan-distnameinfo-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libcpan-distnameinfo-perl.git
+Homepage: https://metacpan.org/release/CPAN-DistnameInfo
+
+Package: libcpan-distnameinfo-perl
+Architecture: all
+Depends: ${perl:Depends},
+         ${misc:Depends}
+Description: module to extract distribution name and version from a filename
+ CPAN::DistnameInfo is a Perl module that extracts the name and version from a
+ CPAN distribution name. It uses heuristics similar to those used by the main
+ <URL:https://metacpan.org/> site to extract the distribution information.
+ It also reports if the version is to be treated as a developer release.
